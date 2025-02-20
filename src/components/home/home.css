@@ -1,0 +1,58 @@
+.hero {
+	background-color: #eae7ff;
+	padding: 60px;
+	object-fit: contain;
+	/* font-family: Sen, sans-serif; */
+}
+
+.hero .hero-image {
+	object-fit: contain;
+	height: 100%;
+	width: 100%;
+	padding: 25px;
+}
+
+
+
+.hero .hero-title {
+	font-size: 80px;
+	color: black;
+	font-weight: 700;
+
+	line-height: 86px;
+
+	@media (max-width: 768px) {
+		font-size: 40px;
+	}
+}
+
+.by-profile {
+	object-fit: cover;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+}
+
+.recipe-badge {
+	font-size: 16px;
+	line-height: 24px;
+	color: #212529;
+}
+.recipe-image-badge {
+	background-color: #d9d5f8;
+	color: #5243c2;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 12px;
+}
+
+.hero .recipe-instructions {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+	color: #212529;
+}
+
+.newsletter-container {
+	background-color: #eae7ff;
+}

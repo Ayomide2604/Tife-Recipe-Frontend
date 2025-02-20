@@ -1,0 +1,143 @@
+.footer {
+	background-color: black;
+	color: white;
+}
+
+.pagination-container .pagination .page-link {
+	color: #5243c2;
+	background-color: white;
+	border: 1px solid #5243c2;
+	border-radius: 0px;
+}
+.pagination-container .pagination .page-item.active .page-link {
+	background-color: #5243c2;
+	color: white;
+}
+.pagination-container button {
+	border-radius: 0px;
+}
+
+.pagination-container .pagination .page-link:hover {
+	background-color: #5243c2;
+	color: white;
+}
+.pagination-container .pagination .page-item {
+	border: 1px solid #5243c2;
+}
+
+.error-page-container {
+	background-color: transparent;
+}
+
+.error-page-container .error-image {
+	aspect-ratio: 1;
+	object-fit: contain;
+	object-position: left;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	width: 80%;
+	height: 100%;
+}
+
+.error-page-container img {
+	background-color: #eae7ff;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.error-page-container .error-text h1 {
+	color: #212529;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 67px;
+}
+.error-page-container .error-text p {
+	color: #212529bf;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.error-page-container .error-text button {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.error-page-container .error-text .badge {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 12px;
+	color: #8b67ff;
+	background-color: #f6f0ff;
+	border-radius: 10px;
+}
+.error-page-container .error-text span {
+	justify-content: center;
+	align-items: center;
+}
+
+.overlay-card {
+	position: relative;
+	border: none;
+	overflow: hidden;
+	height: 300px;
+}
+
+.imageoverlay {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.recipe-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.overlay-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.imageoverlay:hover .overlay-content {
+	opacity: 1;
+}
+
+.overlay-title {
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.overlay-content p {
+	font-size: 1rem;
+	margin-bottom: 10px;
+}
+
+.overlay-content button {
+	background-color: #0056b3;
+	border: none;
+	padding: 10px 20px;
+	font-size: 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.overlay-content button:hover {
+	background-color: #0056b3;
+}

@@ -1,0 +1,20 @@
+.our-story {
+	background-color: #f8f9fa;
+}
+
+.our-story span {
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 500;
+	color: #5243c2;
+	font-weight: 700;
+}
+
+.our-story-img img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+
+	border-radius: 20px;
+}

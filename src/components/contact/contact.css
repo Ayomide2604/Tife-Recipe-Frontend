@@ -1,0 +1,59 @@
+.contact-container {
+	background-color: transparent;
+}
+
+.contact-info {
+	background-color: transparent;
+}
+
+.contact-info-icon {
+	font-size: 45px;
+	line-height: 72px;
+	font-weight: 400;
+	color: #5243c2;
+	margin-bottom: 10px;
+}
+
+.contact-info-title {
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 700;
+	color: #212529;
+}
+
+.contact-info-text {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #212529bf;
+}
+
+.contact-card {
+	background-color: transparent;
+}
+
+.contact-card-item {
+	border-radius: 20px;
+	padding: 20px;
+	background-color: #f8f9fa;
+}
+
+.submit-btn {
+	background-color: #5243c2;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+
+.contact-card-accordion {
+	background-color: transparent;
+	border: transparent;
+}
+
+.contact-card-accordion-item {
+	background-color: transparent;
+	border: transparent;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
