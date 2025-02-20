@@ -5,11 +5,14 @@ const ErrorPage = () => {
 		<Container fluid className="error-page-container  p-5 ">
 			<Row>
 				<Col
-					lg={6}
-					md={6}
+					lg={12}
+					md={12}
+					sm={12}
 					className="error-text  text-center p-2 d-flex flex-column justify-content-center p-5 "
 				>
-					<span className="badge badge-pill col-3">We are Sorry :(</span>
+					<span className="badge badge-pill col-2 align-self-center">
+						We are Sorry :(
+					</span>
 					<h1>404 Not Found</h1>
 					<p>Sorry, the page you are looking for does not exist.</p>
 					<div>
@@ -31,13 +34,13 @@ const ErrorPage = () => {
 						</Link>
 					</div>
 				</Col>
-				<Col lg={6} md={6} className="p-2">
+				{/* <Col lg={6} md={6} className="p-2">
 					<img
 						src="/error2.png"
 						alt="error"
 						className="error-image rounded-circle shadow-4-strong"
 					/>
-				</Col>
+				</Col> */}
 			</Row>
 		</Container>
 	);
