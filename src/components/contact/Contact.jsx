@@ -1,7 +1,7 @@
 import React from "react";
 import Info from "./Info";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
-import "./Contact.css";
+import "./contact.css";
 import ContactForm from "./ContactForm";
 const Contact = () => {
 	return (
