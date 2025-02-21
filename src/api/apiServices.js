@@ -59,6 +59,11 @@ export const getCategories = async (pageNumber) => {
 	return response.data;
 };
 
+export const getAllCategories = async () => {
+	const response = await apiClient.get("/categories/all");
+	return response.data;
+};
+
 export const getCategoryById = async (id) => {
 	const response = await apiClient.get(`/categories/${id}`);
 	return response.data;

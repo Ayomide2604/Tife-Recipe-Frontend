@@ -107,7 +107,6 @@ function App() {
 					element={
 						<RecipeList
 							recipes={recipes}
-							categories={categories}
 							currentRecipesPage={currentRecipesPage}
 							totalRecipesPages={totalRecipesPages}
 							error={error}
