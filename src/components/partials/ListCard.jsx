@@ -10,7 +10,7 @@ function ListCard({ items, children }) {
 					<Card.Img variant="top" src={items.image} className="recipe-image" />
 					<div className="overlay-content">
 						<Card.Title className="overlay-title">{items.title}</Card.Title>
-
+					
 						{children}
 					</div>
 				</div>

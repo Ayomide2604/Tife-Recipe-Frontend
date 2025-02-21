@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import Loading from "../partials/Loading";
 import ErrorPage from "../partials/ErrorPage";
 import ListCard from "../partials/ListCard";
+import { Link } from "react-router-dom";
 
 const CategoryDetail = () => {
 	const { id } = useParams();
@@ -13,11 +14,14 @@ const CategoryDetail = () => {
 	const [error, setError] = useState(null);
 	const [loading, setLoading] = useState(true);
 
+	console.log(
+		"category:",
+		category.recipes.map((recipe) => recipe.image)
+	);
 	useEffect(() => {
 		const fetchCategory = async () => {
 			try {
 				const data = await getCategoryById(id);
-				console.log("id:", id);
 				setCategory(data);
 			} catch (error) {
 				console.error("Error fetching category:", error);
@@ -49,7 +53,13 @@ const CategoryDetail = () => {
 					<Row>
 						{category.recipes.map((recipe) => (
 							<ListCard key={recipe.id} items={recipe}>
-								<Button variant="primary">View Recipe</Button>
+								<Button
+									as={Link}
+									to={`/recipes/${recipe.id}`}
+									variant="primary"
+								>
+									View Recipe
+								</Button>
 							</ListCard>
 						))}
 					</Row>
