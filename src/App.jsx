@@ -14,7 +14,7 @@ import UpdateRecipe from "./components/recipes/UpdateRecipe";
 import RecipeDetail from "./components/recipes/RecipeDetail";
 import { getRecipes, getCategories } from "./api/apiServices";
 import Login from "./components/auth/Login";
-import Signup from "./components/auth/Signup";
+// import Signup from "./components/auth/Signup";
 import ErrorPage from "./components/partials/ErrorPage";
 import Loading from "./components/partials/Loading";
 import Dashboard from "./components/dashboard/Dashboard";
@@ -141,7 +141,7 @@ function App() {
 					}
 				/>
 				<Route path="/categories/:id" element={<CategoryDetail />} />
-				<Route path="/signup" element={<Signup />} />
+				{/* <Route path="/signup" element={<Signup />} /> */}
 				<Route path="*" element={<ErrorPage />} />
 			</Routes>
 			<Footer />

@@ -23,7 +23,10 @@ const RecipeFilter = ({
 							Categories
 						</button>
 					</h2>
-					<div id="collapseOne" className="accordion-collapse collapse show">
+					<div
+						id="collapseOne"
+						className="accordion-collapse collapse collapsed"
+					>
 						<div className="accordion-body">
 							<div
 								className="accordion-body"
@@ -31,6 +34,7 @@ const RecipeFilter = ({
 								style={{
 									backgroundColor:
 										selectedCategory === null ? "#CFE2FF" : "transparent",
+									cursor: "pointer",
 								}}
 							>
 								All Recipes
@@ -45,6 +49,7 @@ const RecipeFilter = ({
 											selectedCategory === category.id
 												? "#CFE2FF"
 												: "transparent",
+										cursor: "pointer",
 									}}
 								>
 									{category.title}

@@ -6,18 +6,18 @@ const Hero = () => {
 			<Row>
 				<Col lg={6}>
 					<Col lg={12}>
-						<h1 className="hero-title">Hero Title Content goes here</h1>
+						<h1 className="hero-title">Tife's Recipes</h1>
 					</Col>
 					<Col lg={12}>
 						<p className=" my-3 ps-1  recipe-instructions">
-							There are many variations of passages, but the majority have
-							suffered alteration in some form, by injected humour, or
-							randomised words which don't look even..
+							Welcome to Tife's Recipes, your go-to source for delicious
+							recipes. Here, you'll find a collection of recipes that are easy
+							to make and sure to please your palate.
 						</p>
 					</Col>
 				</Col>
 				<Col lg={6}>
-					<img src="homepage-hero.png" alt="" className="hero-image " />
+					<img src="/home/homepage-header.png" alt="" className="hero-image " />
 				</Col>
 			</Row>
 		</div>
