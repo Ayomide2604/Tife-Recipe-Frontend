@@ -121,7 +121,10 @@ function App() {
 
 				{/* Protected Routes */}
 				<Route element={<ProtectedRoute />}>
-					<Route path="/dashboard" element={<Dashboard recipes={recipes} />} />
+					<Route
+						path="/dashboard"
+						element={<Dashboard recipes={recipes} categories={categories} />}
+					/>
 					<Route path="/recipes/add" element={<AddRecipe />} />
 					<Route path="/recipes/:id/edit" element={<UpdateRecipe />} />
 				</Route>

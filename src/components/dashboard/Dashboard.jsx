@@ -9,6 +9,7 @@ import RecipeFilter from "../partials/RecipeFilter";
 
 const Dashboard = ({
 	recipes,
+	categories,
 	currentPage,
 	totalPages,
 	error,
@@ -47,7 +48,7 @@ const Dashboard = ({
 				</Col>
 			</Row>
 			<Row>
-				<RecipeFilter />
+				<RecipeFilter categories={categories} />
 
 				<Col lg={9} className="mt-3 mb-3">
 					<table className="table table-striped ">
