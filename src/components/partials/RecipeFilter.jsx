@@ -21,7 +21,7 @@ const RecipeFilter = ({ categories }) => {
 					</h2>
 					<div id="collapseOne" className="accordion-collapse collapse show">
 						{categories.map((category) => (
-							<div className="accordion-body">
+							<div key={category.id} className="accordion-body">
 								<Link to={`/categories/${category.id}`}>{category.title}</Link>
 							</div>
 						))}
