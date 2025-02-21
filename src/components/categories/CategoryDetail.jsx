@@ -14,10 +14,6 @@ const CategoryDetail = () => {
 	const [error, setError] = useState(null);
 	const [loading, setLoading] = useState(true);
 
-	console.log(
-		"category:",
-		category.recipes.map((recipe) => recipe.image)
-	);
 	useEffect(() => {
 		const fetchCategory = async () => {
 			try {
@@ -51,17 +47,22 @@ const CategoryDetail = () => {
 				</Row>
 				{category.recipes.length > 0 ? (
 					<Row>
-						{category.recipes.map((recipe) => (
-							<ListCard key={recipe.id} items={recipe}>
-								<Button
-									as={Link}
-									to={`/recipes/${recipe.id}`}
-									variant="primary"
-								>
-									View Recipe
-								</Button>
-							</ListCard>
-						))}
+						{category.recipes.map(
+							(recipe) => (
+								console.log(recipe),
+								(
+									<ListCard key={recipe.id} items={recipe}>
+										<Button
+											as={Link}
+											to={`/recipes/${recipe.id}`}
+											variant="primary"
+										>
+											View Recipe
+										</Button>
+									</ListCard>
+								)
+							)
+						)}
 					</Row>
 				) : (
 					<h1>No recipes found</h1>
